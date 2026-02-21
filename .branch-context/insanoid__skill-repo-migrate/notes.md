@@ -3,7 +3,7 @@
 ## Metadata (generated)
 - branch: `insanoid/skill-repo-migrate`
 - branch_key: `insanoid__skill-repo-migrate`
-- updated_at_utc: `2026-02-21T10:50:49.442363+00:00`
+- updated_at_utc: `2026-02-21T10:50:53.322568+00:00`
 - transcript_source: `not found`
 - captured_plan_files: `0`
 
@@ -32,7 +32,8 @@ No user objective detected in transcript.
 ?? uv.lock
 
 ### Changed Files Against Base
-- none
+- `.branch-context/insanoid__skill-repo-migrate/notes.md`
+- `.branch-context/insanoid__skill-repo-migrate/todo.md`
 
 ## Plan References (generated)
 - none

@@ -163,6 +163,32 @@ GitHub Actions validates this repository on pull requests and pushes to `main`:
 - CLI smoke check (`branch_context_manager.sh --help`)
 - skills install/discovery smoke check (`npx skills add . --list`)
 
+## Release Management
+
+Releases are automated with `semantic-release` and run on pushes to `main`.
+
+- evaluates commit history using Conventional Commits
+- computes the next semver version
+- updates `CHANGELOG.md`
+- creates a GitHub Release with generated notes
+- creates a release commit (`chore(release): <version> [skip ci]`)
+
+### Commit Format
+
+Use Conventional Commit messages (examples):
+
+- `feat: add opencode runtime discovery fallback`
+- `fix: avoid absolute path leakage in notes`
+- `docs: clarify branch_key mapping`
+- `chore(deps): update semantic-release plugins`
+
+### Local Dry Run
+
+```bash
+npm ci
+npm run release:dry-run
+```
+
 ## Notes
 
 - Legacy `.context/<branch_key>/` data is auto-migrated to `.branch-context/<branch_key>/`.

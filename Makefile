@@ -23,3 +23,6 @@ fix:
 
 precommit:
 	uv run pre-commit run --all-files
+
+release-dry-run:
+	npm run release:dry-run

@@ -1,0 +1,13 @@
+# Python caches and virtualenv
+__pycache__/
+*.py[cod]
+.venv/
+
+# Tooling caches
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# Local context data
+.context/
+.branch-context/

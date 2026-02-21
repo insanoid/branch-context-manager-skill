@@ -8,19 +8,19 @@ It writes to:
 - `.branch-context/<branch_key>/todo.md`
 - `.branch-context/<branch_key>/plans/*.md`
 
-## Install (skills.sh / npx skills)
+## Install This Skill
 
-This repository is structured as a single root skill (`SKILL.md` at repo root), which is compatible with `skills.sh`/`npx skills` repository installs.
+Install `branch-context-manager` from this repository:
 
 ```bash
-# Install for current project
-npx skills add <owner>/<repo>
+# Install in the current project
+npx skills add insanoid/branch-context-manager-skill --skill branch-context-manager
 
 # Install globally for specific agents
-npx skills add <owner>/<repo> -g -a codex -a claude-code
+npx skills add insanoid/branch-context-manager-skill --skill branch-context-manager -g -a codex -a claude-code
 
-# Preview discovered skills without installing
-npx skills add <owner>/<repo> --list
+# Verify the skill is available
+npx skills list | rg branch-context-manager
 ```
 
 ## Repository Layout
